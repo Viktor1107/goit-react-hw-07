@@ -1,13 +1,13 @@
 import { createSelector } from "@reduxjs/toolkit";
 import { selectNameFilter } from "./filtersSlice";
 
-export const selectTasks = (state) => state.tasks.items;
+export const selectTasks = (state) => state.contacts.items;
 
-export const selectIsLoading = (state) => state.tasks.isLoading;
+export const selectIsLoading = (state) => state.contacts.isLoading;
 
-export const selectError = (state) => state.tasks.error;
+export const selectError = (state) => state.contacts.error;
 
-export const selectStatusFilter = (state) => state.filters.status;
+export const selectStatusFilter = (state) => state.filters.name;
 
 export const selectContacts = (state) => state.contacts.items;
 
